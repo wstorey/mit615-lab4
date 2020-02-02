@@ -14,11 +14,6 @@ services:
       driver: none
     volumes:
       - './tmp/redis:/data'
-  mail:
-    image: jeanberu/mailcatcher
-    ports:
-      - "1025:1025"
-      - "1080:1080"
   # These are the components of the app
   app:
     build:

@@ -117,6 +117,7 @@ GEM
     nio4r (2.5.2)
     nokogiri (1.10.7)
       mini_portile2 (~> 2.4.0)
+    pg (0.21.0)
     public_suffix (4.0.3)
     puma (4.3.1)
       nio4r (~> 2.0)
@@ -156,6 +157,7 @@ GEM
     rb-fsevent (0.10.3)
     rb-inotify (0.10.1)
       ffi (~> 1.0)
+    redis (3.3.5)
     regexp_parser (1.6.0)
     ruby-graphviz (1.2.4)
     rubyzip (2.1.0)
@@ -183,7 +185,6 @@ GEM
       actionpack (>= 4.0)
       activesupport (>= 4.0)
       sprockets (>= 3.0.0)
-    sqlite3 (1.4.2)
     thor (1.0.1)
     thread_safe (0.3.6)
     tilt (2.0.10)
@@ -219,14 +220,15 @@ DEPENDENCIES
   jbuilder
   jquery-rails
   listen
+  pg (~> 0.21)
   puma
   rails (~> 5.2.4)
   rails-erd
+  redis (~> 3.0)
   sass-rails
   selenium-webdriver
   spring
   spring-watcher-listen
-  sqlite3
   turbolinks
   tzinfo-data
   uglifier

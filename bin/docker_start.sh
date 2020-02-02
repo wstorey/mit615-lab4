@@ -1,10 +1,6 @@
 #!/bin/bash
 
-# Written by: Andrew Raymer
-# Last Modified By: Andrew Raymer
-readonly VERSION="1.0.0"
-# Date Created: Dec 17th, 2019
-# Date Last Modified: Dec 17th, 2019
+# Author: Andrew Raymer
 set +e
 echo "=~=~=~=~=~=~= Attempting to Migrate the DB =~=~=~=~=~=~="
 bin/rails db:migrate 2>/dev/null
