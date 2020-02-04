@@ -33,8 +33,9 @@ gem 'redis', '~> 3.0'
 # gem 'bcrypt', '~> 3.1.7'
 
 ## Gemfile for Rails 3+, Sinatra, and Merb
-# gem 'will_paginate', '~> 3.1.0'
+gem 'will_paginate', '~> 3.1.0'
 gem 'pg', '~> 0.21'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -44,7 +45,6 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara'
   gem 'selenium-webdriver'
-  gem 'will_paginate', '~> 3.1.0'
 end
 
 group :development do
