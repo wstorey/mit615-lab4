@@ -7,7 +7,7 @@ development:
   <<: *default
   database: bleater-dev
   host: db
-  username: postgresql
+  username: postgres
   password:
 
 test:

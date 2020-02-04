@@ -34,7 +34,7 @@ gem 'redis', '~> 3.0'
 
 ## Gemfile for Rails 3+, Sinatra, and Merb
 # gem 'will_paginate', '~> 3.1.0'
-
+gem 'pg', '~> 0.21'
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -56,7 +56,6 @@ group :development do
   gem 'spring-watcher-listen'
   gem 'annotate'
   gem 'rails-erd'
-  gem 'pg', '~> 0.21'
 end
 
 group :production do
