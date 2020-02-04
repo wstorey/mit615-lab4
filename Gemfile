@@ -12,7 +12,7 @@ gem 'bootstrap_form'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '~> 5.2.4'
 # Use Puma as the app server
-gem 'sqlite3'
+# gem 'sqlite3'
 gem 'puma'
 # Use SCSS for stylesheets
 gem 'sass-rails'
@@ -32,6 +32,9 @@ gem 'redis', '~> 3.0'
 # Use ActiveModel has_secure_password
 # gem 'bcrypt', '~> 3.1.7'
 
+## Gemfile for Rails 3+, Sinatra, and Merb
+# gem 'will_paginate', '~> 3.1.0'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 
@@ -41,6 +44,7 @@ group :development, :test do
   # Adds support for Capybara system testing and selenium driver
   gem 'capybara'
   gem 'selenium-webdriver'
+  gem 'will_paginate', '~> 3.1.0'
 end
 
 group :development do
@@ -52,6 +56,11 @@ group :development do
   gem 'spring-watcher-listen'
   gem 'annotate'
   gem 'rails-erd'
+  gem 'pg', '~> 0.21'
+end
+
+group :production do
+  gem 'rails_12factor'
 end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
